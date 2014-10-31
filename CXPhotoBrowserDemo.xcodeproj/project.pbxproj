@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5C7AB3D953AE4662B6FF2B06 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F504D649F04F89B55A4EC5 /* libPods.a */; };
+		1BAE7D351A03AAA400EB400E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BAE7D341A03AAA400EB400E /* libPods.a */; };
 		830DD085175EF56D00B2FF9D /* CXBrowserNavBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 830DD074175EF56D00B2FF9D /* CXBrowserNavBarView.m */; };
 		830DD086175EF56D00B2FF9D /* CXBrowserToolBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 830DD076175EF56D00B2FF9D /* CXBrowserToolBarView.m */; };
 		830DD087175EF56D00B2FF9D /* CXPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 830DD078175EF56D00B2FF9D /* CXPhoto.m */; };
@@ -48,7 +48,7 @@
 
 /* Begin PBXFileReference section */
 		1BAE7CC81A039D4B00EB400E /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
-		45F504D649F04F89B55A4EC5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BAE7D341A03AAA400EB400E /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "../../../Library/Developer/Xcode/DerivedData/CXPhotoBrowserDemo-coiyaycvdjihbfgvlbusmogvcjyr/Build/Products/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		830DD073175EF56D00B2FF9D /* CXBrowserNavBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXBrowserNavBarView.h; sourceTree = "<group>"; };
 		830DD074175EF56D00B2FF9D /* CXBrowserNavBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXBrowserNavBarView.m; sourceTree = "<group>"; };
 		830DD075175EF56D00B2FF9D /* CXBrowserToolBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXBrowserToolBarView.h; sourceTree = "<group>"; };
@@ -102,9 +102,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				832D9E481720FE1500E334E3 /* UIKit.framework in Frameworks */,
+				1BAE7D351A03AAA400EB400E /* libPods.a in Frameworks */,
 				832D9E4A1720FE1500E334E3 /* Foundation.framework in Frameworks */,
 				832D9E4C1720FE1500E334E3 /* CoreGraphics.framework in Frameworks */,
-				5C7AB3D953AE4662B6FF2B06 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,10 +161,10 @@
 		832D9E461720FE1500E334E3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1BAE7D341A03AAA400EB400E /* libPods.a */,
 				832D9E471720FE1500E334E3 /* UIKit.framework */,
 				832D9E491720FE1500E334E3 /* Foundation.framework */,
 				832D9E4B1720FE1500E334E3 /* CoreGraphics.framework */,
-				45F504D649F04F89B55A4EC5 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -450,6 +450,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CXPhotoBrowserDemo/CXPhotoBrowserDemo-Prefix.pch";
 				INFOPLIST_FILE = "CXPhotoBrowserDemo/CXPhotoBrowserDemo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/CXPhotoBrowserDemo-coiyaycvdjihbfgvlbusmogvcjyr/Build/Products/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -462,6 +466,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CXPhotoBrowserDemo/CXPhotoBrowserDemo-Prefix.pch";
 				INFOPLIST_FILE = "CXPhotoBrowserDemo/CXPhotoBrowserDemo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/CXPhotoBrowserDemo-coiyaycvdjihbfgvlbusmogvcjyr/Build/Products/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
