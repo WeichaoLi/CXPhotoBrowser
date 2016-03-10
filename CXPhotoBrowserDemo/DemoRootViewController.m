@@ -55,9 +55,9 @@
     self.browser = [[CXPhotoBrowser alloc] initWithDataSource:self delegate:self];
     self.browser.wantsFullScreenLayout = NO;
     
-    imageURLs = [[NSArray alloc] initWithObjects:@"http://beauty-places.com/wp-content/uploads/2012/10/TaiPei-101-Wallpaper3.jpg",@"http://4.bp.blogspot.com/_Dei71iQMoec/S8T1RQvIPbI/AAAAAAAAGK0/jDBh_BKubx0/s1600/cat50.jpg",@"http://images1.fanpop.com/images/image_uploads/Funny-Cat-Pictures-animal-humor-935491_500_375.jpg",@"http://zef.me/wp-content/uploads/2008/02/funny-cat.jpg", @"http://wallpaperdev.com/stock/cute-cat-close-up.jpg",@"http://3.bp.blogspot.com/-J6WK7HAE_78/T1lvmpI8FAI/AAAAAAAACSI/xrcJT7el-Tk/s1600/cute+cat+funny.jpg", nil];
+    imageURLs = [[NSArray alloc] initWithObjects:@"http://e.hiphotos.baidu.com/image/w%3D310/sign=e5452fe69e82d158bb825fb0b00a19d5/d53f8794a4c27d1ee65792cc19d5ad6eddc43840.jpg",@"http://f.hiphotos.baidu.com/image/w%3D310/sign=abe252cf3987e9504217f56d2039531b/4ec2d5628535e5ddfaf3f8d375c6a7efcf1b62da.jpg",@"http://c.hiphotos.baidu.com/image/w%3D310/sign=44a82601aeaf2eddd4f14fe8bd110102/8cb1cb1349540923eff53b799058d109b3de491c.jpg",@"http://g.hiphotos.baidu.com/image/w%3D310/sign=cb57798b06087bf47dec51e8c2d1575e/8644ebf81a4c510f0f3ba4da6459252dd52aa577.jpg", @"http://e.hiphotos.baidu.com/image/w%3D310/sign=b04e9276e5cd7b89e96c3c823f254291/f9198618367adab42ea489ff88d4b31c8701e412.jpg", @"http://c.hiphotos.baidu.com/baike/c0%3Dbaike180%2C5%2C5%2C180%2C60/sign=99dc4489d60735fa85fd46ebff3864d6/4b90f603738da9770bd660b9b251f8198718e3a3.jpg" ,nil];
     
-    descriptions = [[NSArray alloc] initWithObjects:@"Taipei 101 (Chinese: 臺北101 / 台北101), formerly known as the Taipei World Financial Center, is a landmark skyscraper located in Xinyi District, Taipei, Taiwan. ",@"http://3.bp.blogspot.com/-J6WK7HAE_78/T1lvmpI8FAI/AAAAAAAACSI/xrcJT7el-Tk/s1600/cute+cat+funny.jpg",@"http://4.bp.blogspot.com/_Dei71iQMoec/S8T1RQvIPbI/AAAAAAAAGK0/jDBh_BKubx0/s1600/cat50.jpg",@"http://images1.fanpop.com/images/image_uploads/Funny-Cat-Pictures-animal-humor-935491_500_375.jpg",@"http://zef.me/wp-content/uploads/2008/02/funny-cat.jpg", @"",@"like.png", nil];
+    descriptions = [NSArray arrayWithObjects:@"",@"",@"",@"",@"",@"",@"",@"", nil];
     
 //    for (int i = 0; i < [imageURLs count]; i++)
 //    {
@@ -74,9 +74,6 @@
         
         [self.photoDataSource addObject:photo];
     }
-    
-    CXPhoto *image = [[CXPhoto alloc] initWithImage:[UIImage imageNamed:@"like.png"]];
-    [self.photoDataSource addObject:image];
 }
 
 - (void)didReceiveMemoryWarning
